@@ -1,36 +1,48 @@
-.label, input, .value {
-    color: #14173D;
+.label,
+input,
+.value {
+  color: #14173d;
 }
 input {
-    border-width:0px;
-    border:none;
-    outline: none;
+  border-width: 0px;
+  border: none;
+  outline: none;
 }
 .label {
-    font-size: 0.8em;
-    color: gray;
+  font-size: 0.8em;
+  color: gray;
 }
 .edit {
-    display: grid;
-    grid-template-columns: 1fr 4em 4em;
-    grid-template-rows: 1fr;
-    border: 2px solid #1FD6BA;
+  display: grid;
+  grid-template-columns: 1fr 4em 4em;
+  grid-template-rows: 1fr;
+  border: 2px solid #1fd6ba;
 }
 .display {
-    display: grid;
-    grid-template-columns: 1fr 3em 3em;
-    grid-template-rows: 1fr;
+  display: grid;
+  grid-template-columns: 1fr 3em 3em;
+  grid-template-rows: 1fr;
 }
 .value {
-    font-size: 1.3em;
-    font-weight: bold;
-    margin: 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0;
 }
 button {
-    background: transparent;
-    border: none;
-    padding: 0;
-    font-family: 'Open Sans';
-    color: #1FD6BA;
-    margin-top: auto;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: "Open Sans";
+  color: #1fd6ba;
+  margin-top: auto;
+}
+.btn-delete {
+  color: #ea573e;
+}
+.btn-edit {
+    grid-column: 3;
+}
+button:disabled,
+button[disabled] {
+  color: gray;
 }

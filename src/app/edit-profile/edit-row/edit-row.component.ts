@@ -10,6 +10,7 @@ export class EditRowComponent implements OnInit {
   isEditing = false;
   @Input() propertyLabel?: string;
   @Input() propertyName?: string;
+  @Input() canDelete? = true;
   @Input() value?: string;
   @Output() valueChanged = new EventEmitter<{ propertyLabel: string, propertyName: string, value: string }>();
   @ViewChild('input') inputElement?: ElementRef;

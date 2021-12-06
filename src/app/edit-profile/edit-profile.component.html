@@ -8,9 +8,9 @@
         <h2>John Cena</h2>
         <form [formGroup]="profileForm" novalidate (ngSubmit)="submitForm(profileForm.value)">
             <app-edit-row [propertyName]="'name'" [propertyLabel]="'Name'" [value]="profileForm.value.name"
-                (valueChanged)="propertyValueChanged($event)"></app-edit-row>
+                (valueChanged)="propertyValueChanged($event)" [canDelete]="false"></app-edit-row>
             <app-edit-row [propertyName]="'userName'" [propertyLabel]="'Username'" [value]="profileForm.value.userName"
-                (valueChanged)="propertyValueChanged($event)"></app-edit-row>
+                (valueChanged)="propertyValueChanged($event)" [canDelete]="false"></app-edit-row>
             <app-edit-row [propertyName]="'address'" [propertyLabel]="'Address'" [value]="profileForm.value.address"
                 (valueChanged)="propertyValueChanged($event)"></app-edit-row>
             <app-edit-row [propertyName]="'city'" [propertyLabel]="'City'" [value]="profileForm.value.city"
