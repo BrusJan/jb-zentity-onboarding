@@ -1,0 +1,15 @@
+<div class="display my-2" *ngIf="!isEditing">
+    <div class="text-left">
+        <p class="label">{{ propertyLabel }}</p>
+        <p class="value">{{ value }}</p>
+    </div>
+    <button class="accent" (click)="switchIsEditing()">Delete</button>
+    <button (click)="switchIsEditing()">Edit</button>
+</div>
+<div class="edit my-2" *ngIf="isEditing">
+    <div class="text-left">
+        <input aria-label="Value" type="text" name="input" #input (title)="propertyLabel" (placeholder)="propertyLabel" [value]="value">
+    </div>
+    <button (click)="deleteClicked()" title="Delete"><img src="../../assets/img/Cross@1x.png" alt=""></button>
+    <button (click)="saveClicked()" title="Save"><img src="../../assets/img/Next Blue@1x.png" alt=""></button>
+</div>

@@ -1,0 +1,27 @@
+<div class="wrapper text-center mx-auto">
+    <div id="top-bar">
+        <a href="/entry"><img src="../../assets/img/Next@1x.png" alt="Back"></a>
+        <img id="logo" src="../../assets/img/Logo@1x.png" alt="Zentity logo">
+        <img src="../../assets/img/Selfie@1x.png" alt="Profile photo">
+    </div>
+    <section class="content">
+        <h2>John Cena</h2>
+        <form [formGroup]="profileForm" novalidate (ngSubmit)="submitForm(profileForm.value)">
+            <app-edit-row [propertyName]="'name'" [propertyLabel]="'Name'" [value]="profileForm.value.name"
+                (valueChanged)="propertyValueChanged($event)"></app-edit-row>
+            <app-edit-row [propertyName]="'userName'" [propertyLabel]="'Username'" [value]="profileForm.value.userName"
+                (valueChanged)="propertyValueChanged($event)"></app-edit-row>
+            <app-edit-row [propertyName]="'address'" [propertyLabel]="'Address'" [value]="profileForm.value.address"
+                (valueChanged)="propertyValueChanged($event)"></app-edit-row>
+            <app-edit-row [propertyName]="'city'" [propertyLabel]="'City'" [value]="profileForm.value.city"
+                (valueChanged)="propertyValueChanged($event)"></app-edit-row>
+            <app-edit-row [propertyName]="'zip'" [propertyLabel]="'Postal Code'" [value]="profileForm.value.zip"
+                (valueChanged)="propertyValueChanged($event)"></app-edit-row>
+            <app-edit-row [propertyName]="'email'" [propertyLabel]="'E-mail'" [value]="profileForm.value.email"
+                (valueChanged)="propertyValueChanged($event)"></app-edit-row>
+            <app-edit-row [propertyName]="'phone'" [propertyLabel]="'Phone'" [value]="profileForm.value.phone"
+                (valueChanged)="propertyValueChanged($event)"></app-edit-row>
+        </form>
+    </section>
+    <button type="submit" class="btn btn-accent my-2 mx-auto" (click)="logout()">Logout</button>
+</div>

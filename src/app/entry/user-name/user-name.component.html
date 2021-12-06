@@ -1,0 +1,23 @@
+<div class="wrapper text-center mx-auto dark-bg">
+  <div id="top-bar">
+    <img id="logo" src="../../assets/img/Logo@1x.png" alt="Zentity logo">
+  </div>
+  <h2 class="mb-3">John Cena</h2>
+  <section class="content h-100">
+    <img src="../../assets/img/User@1x.png" alt="">
+    <p class="accent mx-auto">Start by setting up your username</p>
+    <form [formGroup]="usernameForm" novalidate>
+      <input formControlName="username" type="text" id="loginForm-username" class="form-control" required
+        aria-label="User Name" [ngClass]="{'input-err': usernameForm.controls['username'].invalid}">
+      <div class="error mx-auto my-2"
+        *ngIf="usernameForm.hasError('minlength', 'username') || usernameForm.hasError('maxlength', 'username')">
+        <div><img src="../../assets/img/Error@1x.png" alt="Error"></div>
+        <div class="error-text">
+          Ooops! Your username must be between 3 and 20 characters long.
+        </div>
+      </div>
+    </form>
+  </section>
+  <button type="submit" class="btn btn-white my-2 mx-auto mt-auto"
+    (click)="continue(usernameForm.value)">Continue</button>
+</div>

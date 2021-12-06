@@ -1,0 +1,36 @@
+.label, input, .value {
+    color: #14173D;
+}
+input {
+    border-width:0px;
+    border:none;
+    outline: none;
+}
+.label {
+    font-size: 0.8em;
+    color: gray;
+}
+.edit {
+    display: grid;
+    grid-template-columns: 1fr 4em 4em;
+    grid-template-rows: 1fr;
+    border: 2px solid #1FD6BA;
+}
+.display {
+    display: grid;
+    grid-template-columns: 1fr 3em 3em;
+    grid-template-rows: 1fr;
+}
+.value {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+}
+button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-family: 'Open Sans';
+    color: #1FD6BA;
+    margin-top: auto;
+}

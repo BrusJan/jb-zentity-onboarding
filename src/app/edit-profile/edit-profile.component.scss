@@ -1,0 +1,11 @@
+html, body, .wrapper, .content {
+  background: white !important;
+}
+h1, h2, h3, h4, h5, h6, p {
+  color: #14173D;
+}
+#top-bar {
+  display: grid;
+  grid-template-columns: 4em 1fr 4em;
+  grid-template-rows: 1fr;
+}

@@ -1,0 +1,132 @@
+// layout, basics
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+  font-family: gilroy-bold;
+  src: url(assets/font-gilroy/Gilroy-ExtraBold.otf) format("opentype");
+}
+@font-face {
+  font-family: gilroy-light;
+  src: url(assets/font-gilroy/Gilroy-Light.otf) format("opentype");
+}
+html, body, .wrapper {
+  height: 100%;
+  margin: 0;
+}
+body {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+  letter-spacing: 1px;
+}
+#top-bar {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  padding: 2em 1em 2em 1em;
+}
+
+// elements
+h1, h2, h3, h4, h5, h6 {
+  background-image: url('../src/assets/img/Slash@2x.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 1.2em;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: gilroy-light;
+}
+.btn {
+  background: transparent;
+  background-image: url('../src/assets/img/Next\ White@1x.png');
+  background-position: 7em;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  color: white;
+  padding: 1em 3em 1em 1em;
+  display: block;
+  width: 11em;
+  cursor: pointer;
+  text-align: left;
+  font-family: gilroy-light;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+.btn-accent {
+  color: #EA573E;
+  border-color: #EA573E;
+  background-image: url('../src/assets/img/Next@1x.png');
+}
+.btn:hover {
+  color: #EA573E;
+  background: white;
+  background-image: url('../src/assets/img/Next@1x.png');
+  background-position: 7em;
+  background-repeat: no-repeat;
+}
+.accent {
+  color: #EA573E;
+}
+.content p {
+  max-width: 250px;
+}
+input {
+  border: 2px solid white;
+  background: transparent;
+  padding: 1em;
+  font-family: gilroy-light;
+  color: white;
+  font-size: 1.2em;
+}
+.input-err {
+  color: #EA573E;
+  border-color: #EA573E;
+}
+#logo {
+  margin: auto;
+}
+.error {
+  text-align: left;
+  gap: 2em;
+  display: grid;
+  grid-template-columns: min-content 15em;
+  grid-template-rows: 1fr;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.error-text {
+  font-size: 0.8em;
+}
+
+// utility classes
+.my-2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.mb-3 {
+  margin-bottom: 3em;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.h-100 {
+  height: 100%;
+}
